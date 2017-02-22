@@ -14,7 +14,7 @@ class Tcpreplay < Formula
   depends_on "libdnet"
 
   def install
-    system "./configure", "--disable-debug",
+    system "./configure", "--enable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
